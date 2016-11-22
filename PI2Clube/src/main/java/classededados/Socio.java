@@ -15,7 +15,6 @@ public class Socio {
 
     //Atributos
     private String nome;
-    protected String razaoSocial;
     private int telefone;
     private String email;
     protected String tipoPessoa;
@@ -23,7 +22,6 @@ public class Socio {
 
     public Socio(String nome, String razaoSocial, int telefone, String email, String tipoPessoa, int CPF) {
         this.nome = nome;
-        this.razaoSocial = razaoSocial;
         this.telefone = telefone;
         this.email = email;
         this.tipoPessoa = tipoPessoa;
@@ -32,7 +30,6 @@ public class Socio {
 
     public Socio() {
         this.nome = "";
-        this.razaoSocial = "";
         this.telefone = 0;
         this.email = "";
         this.tipoPessoa = "";
@@ -79,14 +76,6 @@ public class Socio {
      */
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getRazaoSocial() {
-        return razaoSocial;
-    }
-
-    public void setRazaoSocial(String razaoSocial) {
-        this.razaoSocial = razaoSocial;
     }
 
     public String getTipoPessoa() {
