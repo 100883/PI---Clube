@@ -14,9 +14,9 @@ import java.util.InputMismatchException;
 public class Socio {
 
     //Atributos
-    private String nome;
-    private int telefone;
-    private String email;
+    protected String nome;
+    protected int telefone;
+    protected String email;
     protected String tipoPessoa;
     protected int CPF;
 
