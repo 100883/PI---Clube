@@ -19,13 +19,15 @@ public class Socio {
     protected String email;
     protected String tipoPessoa;
     protected int CPF;
+    private int cod_socio;
 
-    public Socio(String nome, String razaoSocial, int telefone, String email, String tipoPessoa, int CPF) {
+    public Socio(String nome, String razaoSocial, int telefone, String email, String tipoPessoa, int CPF, int cod_socio) {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
         this.tipoPessoa = tipoPessoa;
         this.CPF = CPF;
+        this.cod_socio = cod_socio;
     }
 
     public Socio() {
@@ -34,6 +36,7 @@ public class Socio {
         this.email = "";
         this.tipoPessoa = "";
         this.CPF = 0;
+        this.cod_socio = 0;
     }
 
     /**

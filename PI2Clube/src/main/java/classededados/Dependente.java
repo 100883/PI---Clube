@@ -15,6 +15,7 @@ public class Dependente {
     private String nome;
     private int telefone;
     private int CPF;
+    private int cod_socio;
 
     //Metodos
     public String getNome() {
@@ -39,6 +40,14 @@ public class Dependente {
 
     public void setCPF(int CPF) {
         this.CPF = CPF;
+    }
+
+    public int getCod_socio() {
+        return cod_socio;
+    }
+
+    public void setCod_socio(int cod_socio) {
+        this.cod_socio = cod_socio;
     }
 
 }
