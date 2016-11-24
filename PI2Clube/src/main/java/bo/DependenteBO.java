@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package classededados;
+package bo;
 
 /**
  *
- * @author Aluno
+ * @author Gui Freitas
  */
-public class Dependente {
+public class DependenteBO {
 
     //Atributos
     private String nome;
