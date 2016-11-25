@@ -71,4 +71,14 @@ public class ClienteDAO {
         return retorno;
     }
 
+    public static void inserirProxCodigo(ClienteBO clienteBo) throws Exception {
+        Conexao conexao = new Conexao();
+        String nometabela = null;
+        //String SQL = "SHOW TABLE STATUS LIKE " + nometabela;
+        clienteBo.setCodigo(1);
+        /*conexao.conectaBD();
+        conexao.executaSQL(SQL);
+        conexao.desconectaBD();*/
+    }
+
 }

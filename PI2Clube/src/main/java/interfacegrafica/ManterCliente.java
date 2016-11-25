@@ -473,9 +473,10 @@ public class ManterCliente extends javax.swing.JInternalFrame {
 
     private void bt_novoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_novoActionPerformed
         op = "incluir";
-        DesbloquearCampos();
-        LimparCampos();
         txt_codigo.setEnabled(false);
+        txt_codigo.setText("1"); //TESTE DE ALTO INCREMENTO DO PROX CODIGO
+        DesbloquearCampos();
+        //LimparCampos();
         bt_novo.setEnabled(false);
         bt_buscar.setEnabled(false);
         bt_editar.setEnabled(false);
