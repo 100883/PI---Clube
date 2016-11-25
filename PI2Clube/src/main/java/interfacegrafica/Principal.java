@@ -263,6 +263,8 @@ public class Principal extends javax.swing.JFrame {
         ManterDependente f4 = new ManterDependente();
         jDesktopPane1.add(f4);
         f4.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f4);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
