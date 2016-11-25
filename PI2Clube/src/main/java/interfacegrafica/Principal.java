@@ -6,16 +6,20 @@
 package interfacegrafica;
 
 //import bo.LogBO;
+import java.awt.Dimension;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 import javax.swing.JDesktopPane;
+import interfacegrafica.Util.*;
 
 /**
  *
  * @author Gui Freitas
  */
 public class Principal extends javax.swing.JFrame {
+    private Util u = new Util();
 
     public int usuarioSessao = 0;
 
@@ -36,7 +40,7 @@ public class Principal extends javax.swing.JFrame {
     public Principal(int acesso) {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
-        if (acesso != 2) {            
+        if (acesso != 2) {
             jMenu5.setEnabled(false);
         }
         AtualizaData();
@@ -92,20 +96,19 @@ public class Principal extends javax.swing.JFrame {
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(10, 10, 10)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 445, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 151, Short.MAX_VALUE)
-                .addComponent(lb_data, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(150, 150, 150)
+                .addComponent(lb_data, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(622, Short.MAX_VALUE)
-                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addGap(622, 622, 622)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lb_data, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addComponent(lb_data, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
         jMenu1.setText("Cadastros");
@@ -204,6 +207,7 @@ public class Principal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private String getDateTime() {
@@ -222,36 +226,49 @@ public class Principal extends javax.swing.JFrame {
         ManterCliente f1 = new ManterCliente();
         jDesktopPane1.add(f1);
         f1.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f1);
+
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         ManterUsuario f2 = new ManterUsuario();
         jDesktopPane1.add(f2);
         f2.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f2);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
         ManterVenda f8 = new ManterVenda();
         jDesktopPane1.add(f8);
         f8.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f8);
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         ManterProduto f3 = new ManterProduto();
         jDesktopPane1.add(f3);
         f3.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f3);
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
         ConsultaVenda f9 = new ManterVenda();
         jDesktopPane1.add(f9);
         f9.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f9);
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
         CancelaVenda f10 = new CancelaVenda();
         jDesktopPane1.add(f10);
         f10.setVisible(true);
+        Util u = null;
+        this.u.centralizar(f10);
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
     private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed

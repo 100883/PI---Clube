@@ -9,17 +9,20 @@ import bo.CepBO;
 import bo.ClienteBO;
 import ctrl.ClienteCTRL;
 import ctrl.ValidadoresCTRL;
+import java.awt.Dimension;
 import java.text.ParseException;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.text.DefaultFormatterFactory;
 import javax.swing.text.MaskFormatter;
+import interfacegrafica.Util.*;
 
 /**
  *
  * @author Gui Freitas
  */
 public class ManterCliente extends javax.swing.JInternalFrame {
+    
     private JFrame tela1;
     /**
      * Creates new form TelaPrincipal
@@ -27,6 +30,9 @@ public class ManterCliente extends javax.swing.JInternalFrame {
     public ManterCliente(JFrame tela1){
         initComponents();
         this.tela1 = tela1;
+        Util u = new Util();
+        u.centralizar(this);
+        
     }
 
     ClienteBO clienteBo = new ClienteBO();
@@ -101,7 +107,7 @@ public class ManterCliente extends javax.swing.JInternalFrame {
         txt_fax = new javax.swing.JFormattedTextField();
 
         setResizable(true);
-        setTitle("Cadastro de Clientes");
+        setTitle("Cadastro de Sócios");
 
         jLayeredPane1.setBorder(javax.swing.BorderFactory.createTitledBorder("Cliente"));
 

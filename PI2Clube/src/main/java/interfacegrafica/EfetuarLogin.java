@@ -137,8 +137,8 @@ public class EfetuarLogin extends javax.swing.JDialog {
                 retorno = efetuarLoginCtrl.EfetuarLogin(loginBo);
                 if (retorno != 0) {
                     Principal principal = new Principal(retorno);
-                    principal.setVisible(true);
                     this.dispose();
+                    principal.setVisible(true);
                 } else {
                     this.jLabel4.setVisible(true);
                     txt_matricula.setText(null);

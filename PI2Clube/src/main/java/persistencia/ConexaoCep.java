@@ -11,7 +11,7 @@ public class ConexaoCep {
     private String login = "postgres";
     private String password = "root";*/
     
-     private final String driver = "oracle.jdbc.OracleDriver";
+    private final String driver = "oracle.jdbc.OracleDriver";
     private final String url = "jdbc:oracle:thin:@localhost:1521:xe";
     private final String user = "AGENDA";
     private final String password = "aluno";
